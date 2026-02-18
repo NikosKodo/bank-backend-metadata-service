@@ -1,9 +1,8 @@
-# bank-backend-metadata-service
+## bank-backend-metadata-service
 
-REST API for managing datasets and data elements metadata. Built with Django REST Framework.
-# Bank Metadata Service with Django
+A small REST API for managing datasets and data elements metadata. Built with Django REST Framework.
 
-A small REST API that manages metadata.
+## Bank Metadata Service with Django
 
 It allows clients to define:
 - **Datasets**: business entities such as Customer, Account, Transaction
@@ -50,31 +49,31 @@ Searches across: `name`, `description`, `data_type`, `dataset__name`
 
 ---
 
-## Run locally (without Docker)
+## Run locally
 
 ### 1) Setup virtual environment
 python -m venv .VirtualEnvironment
-# Windows PowerShell:
+### Windows PowerShell:
 .VirtualEnvironment\Scripts\Activate.ps1
-# macOS/Linux:
+### macOS/Linux:
 source .VirtualEnvironment/bin/activate
 
-# Install dependencies
+### Install dependencies
 pip install -r requirements.txt
 
-# Apply migrations
+### Apply migrations
 python manage.py migrate
 
-# Run the server
+### Run the server
 python manage.py runserver
 
-# API will be available at:
+### API will be available at:
 http://127.0.0.1:8000/
 
-# Swagger UI: 
+### Swagger UI: 
 http://127.0.0.1:8000/api/docs/
 
-# Run tests
+### Run tests
 python manage.py test
 
 ## Assessment notes
